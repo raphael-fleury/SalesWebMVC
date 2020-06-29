@@ -11,6 +11,8 @@ namespace SalesWebMvc.Models
         public string Name { get; set; }
         public List<Seller> Sellers { get; set; }
 
+        public Department() { }
+
         public Department(int id, string name)
         {
             Id = id;
