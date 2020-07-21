@@ -18,7 +18,7 @@ namespace SalesWebMvc.Data
 
         public void Seed()
         {
-            if (_context.Department.Any() || _context.Department.Any() || _context.SalesRecord.Any())
+            if (_context.Seller.Any() || _context.Department.Any() || _context.SalesRecord.Any())
                 return;
 
             Department d1 = new Department(1, "Computers");
@@ -35,8 +35,8 @@ namespace SalesWebMvc.Data
 
             SalesRecord r1 = new SalesRecord(1, new DateTime(2018, 09, 25), 11000, SaleStatus.BILLED, s1);
             SalesRecord r2 = new SalesRecord(2, new DateTime(2017, 10, 26), 11000, SaleStatus.BILLED, s4);
-            SalesRecord r3 = new SalesRecord(3, new DateTime(2018, 09, 30), 11000, SaleStatus.BILLED, s2);
-            SalesRecord r4 = new SalesRecord(4, new DateTime(2018, 08, 25), 11000, SaleStatus.BILLED, s3);
+            SalesRecord r3 = new SalesRecord(3, new DateTime(2018, 09, 10), 11000, SaleStatus.BILLED, s2);
+            SalesRecord r4 = new SalesRecord(4, new DateTime(2018, 08, 8), 11000, SaleStatus.BILLED, s3);
 
             _context.Department.AddRange(d1, d2, d3, d4);
             _context.Seller.AddRange(s1, s2, s3, s4, s5, s6);
